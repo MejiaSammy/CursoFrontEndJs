@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokedex</title>
+    <link rel="icon" href="img/pokeball.png">
+    <link rel="stylesheet" href="./estilo.css">
+</head>
+<body>    
+    <div id="pokedex">
+        <!-- Izquierdo -->
+        <div id="left">
+          <div id="logo"></div>
+          <div id="bg_curve1_left"></div>
+          <div id="bg_curve2_left"></div>
+          <div id="curve1_left">
+            <div id="buttonGlass">
+              <div id="reflect"> </div>
+            </div>
+            <div id="miniButtonGlass1"></div>
+            <div id="miniButtonGlass2"></div>
+            <div id="miniButtonGlass3"></div>
+          </div>
+          <div id="curve2_left">
+            <div id="junction">
+              <div id="junction1"></div>
+              <div id="junction2"></div>
+            </div>
+          </div>
+          <!-- Pantalla blanca -->
+          <div id="screen">
+            <div id="topPicture">
+              <div id="buttontopPicture1"></div>
+              <div id="buttontopPicture2"></div>
+            </div>
+
+            <div id="picture">
+              <h1 id="pokeNameA" > Pokemon</h1> <!-- Nombre del Pokemon -->
+              <img src="img/pokebola.png" alt="Pokemon" id="pokeImg" width="150px"><br>
+            </div>
+
+            <div id="buttonbottomPicture"></div>
+            <h2 id="pokeId" >25</h2> <!-- Número del Pokemon -->
+                
+            <div id="speakers">
+              <div class="sp"></div>
+              <div class="sp"></div>
+              <div class="sp"></div>
+              <div class="sp"></div>
+            </div>
+          </div>
+
+          <button class="bigbluebutton" onclick="fetchPokemon()">Ver</button> <!-- Boton Buscar -->                   
+
+          <div id="barbutton1"></div>
+          <div id="barbutton2"></div>
+            <input type="text" placeholder="Nombre/Núm" id="pokeName" name="pokeName"><br>  <!-- Input Nombre o Numero-->    
+          
+      
+          <div id="cross">
+            <div id="leftcross">
+              <div id="leftT" ></div>
+            </div>
+            <div id="topcross">
+              <div id="upT"></div>
+            </div>
+            <div id="rightcross">
+              <div id="rightT"></div>
+            </div>
+            <div id="midcross">
+              <div id="midCircle"></div>
+            </div>
+            <div id="botcross">
+              <div id="downT"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Derecha -->
+        <div id="right">
+          <div id="stats">            
+            <strong id="pokeHability" class="pokeId">Habilidad:</strong><br />
+            <strong id="pokeType" class="pokeId">Tipo:</strong><br />
+          </div>
+          <div id="stats2">
+            <strong id="pokeHp" class="pokeId">Hp:</strong><br />            
+            <strong id="pokeAtaque" class="pokeId">Ataque:</strong><br />
+            <strong id="pokeDefensa" class="pokeId">Defensa:</strong><br />
+            <strong id="pokeAEspecial" class="pokeId">Ataque Especial:</strong><br />
+            <strong id="pokeDEspecial" class="pokeId">Defensa Especial:</strong><br />
+            <strong id="pokeVelocidad" class="pokeId">Velocidad:</strong><br />
+          </div>
+          <div id="blueButtons1">
+            <div class="blueButton"></div>
+            <div class="blueButton"></div>
+            <div class="blueButton"></div>
+            <div class="blueButton"></div>
+            <div class="blueButton"></div>
+          </div>
+          <div id="blueButtons2">
+            <div class="blueButton"></div>
+            <div class="blueButton"></div>
+            <div class="blueButton"></div>
+            <div class="blueButton"></div>
+            <div class="blueButton"></div>
+          </div>
+          <div id="miniButtonGlass4"></div>
+          <div id="miniButtonGlass5"></div>
+          <div id="barbutton3"></div>
+          <div id="barbutton4"></div>
+           <!-- Altura -->
+          <div id="yellowBox1">
+            <h1>Altura:</h1>
+            <h3 id="pokeHeight" class="pokeId"></h3>
+          </div>
+          <!-- Peso -->
+          <div id="yellowBox2">
+            <h1>Peso:</h1>
+            <h3 id="pokeWeight" class="pokeId"></h3>
+          </div>
+          <div id="bg_curve1_right"></div>
+          <div id="bg_curve2_right"></div>
+          <div id="curve1_right"></div>
+          <div id="curve2_right"></div>
+        </div>
+      </div>
+</body>
+<footer>
+    <script src="./pokedex.js"></script>
+</footer>
+</html>
